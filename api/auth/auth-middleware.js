@@ -1,4 +1,5 @@
 const auth = require("./auth-router");
+const User = require("../user/user-model");
 
 const checkPayload = (req, res, next) => {
   const { password, username } = req.body;
